@@ -1,0 +1,1176 @@
+@font-face {
+  font-family: "Media";
+  src: url("../Fonts/font\ 1.otf");
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url("../Fonts/font\ 2.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+::selection{
+  background-color: #f78c00;
+  color: black;
+}
+
+
+/* <====================================================== Button Loader Coded Here ======================================================> */
+
+.button-loader{
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  position: fixed;
+  z-index: 999;
+  pointer-events: none;
+  display: none;
+}
+.lft-slide{
+  width: 50%;
+  height: 100%;
+  background-color: #191919;
+  position: absolute;
+  left: -100%;
+}
+.rgt-slide{
+  width: 50%;
+  height: 100%;
+  background-color: #191919;
+  position: absolute;
+  right: -100%;
+}
+
+
+
+
+/* <====================================================== Loader Coded Here ======================================================> */
+
+
+.loader{
+  width: 100%;
+  height: 100vh;
+  background-color: #1B1B1B;
+  position: fixed;
+  z-index: 999;
+}
+
+/* <====================================================== Navbar Coded Here ======================================================> */
+
+nav {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  font-family: "SF Pro";
+  padding: 0 100px;
+  z-index: 90;
+}
+.nav_logo {
+  width: 12%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.nav_logo img {
+  width: 230%;
+  height: 230%;
+  object-fit: cover;
+  pointer-events: none;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 35px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(31, 31, 31);
+  font-weight: 300;
+}
+
+nav a.contact_btn {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 8px;
+  transform-origin: center;
+  transition: 0.5s ease;
+}
+nav a.contact_btn:hover {
+  transform: scaleX(1.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.543);
+}
+
+/* <====================================================== Herobox Coded Here ======================================================> */
+
+.herobox{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.herobox h2{
+    font-family: "SF Pro";
+    font-size: 16px;
+    letter-spacing: 6px;
+    color: #f78c00;
+}
+.herobox h1{
+    font-family: "Media";
+    font-size: 95px;
+    text-align: center;
+    width: 80%;
+    margin-top: 20px;
+}
+.herobox a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 55px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "SF Pro";
+    color: black;
+    margin-top: 30px;
+    transform-origin: center;
+    transition: .3s ease;
+}
+.herobox a:hover{
+    transform: scaleX(1.1);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.331);
+}
+.herobox-auto-slider{
+    width: 35%;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 5%;
+}
+.herobox-slider-holder{
+    width: 150%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    left: 100%;
+    justify-content: space-between;
+    animation: move 20s linear infinite;
+}
+@keyframes move {
+    from{
+        left: 100%;
+    }
+    to{    left: -150%;}
+}
+.herobox-slider-holder-1{
+    width: 15%;
+    height: 100%;
+    overflow: hidden;
+}
+.herobox-slider-holder-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* <====================================================== Section 1 Coded Here ======================================================> */
+
+.section-1{
+  width: 100%;
+  height: 160vh;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-container{
+  width: 100%;
+  height: 550px;
+  position: absolute;
+  top: 5%;
+}
+.card-1{
+  width: 16%;
+  height: 72%;
+  overflow: hidden;
+  position: absolute;
+  top: 0%;
+  left: -10%;
+  border-radius: 15px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.card-1:hover img{
+  transform: scale(1.1);
+}
+.card-1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s ease;
+}
+.card-2{
+  width: 16%;
+  height: 72%;
+  overflow: hidden;
+  position: absolute;
+  left: 7%;
+  top: 5%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.card-2:hover img{
+  transform: scale(1.1);
+}
+.card-2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s ease;
+  object-position: top;
+}
+.card-3{
+  width: 16%;
+  height: 72%;
+  overflow: hidden;
+  position: absolute;
+  left: 24%;
+  top: 12%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.card-3:hover img{
+  transform: scale(1.1);
+}
+.card-3 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s ease;
+  object-position: top;
+}
+.card-4{
+  width: 16%;
+  height: 72%;
+  overflow: hidden;
+  position: absolute;
+  left: 42%;
+  top: 20%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.card-4:hover img{
+  transform: scale(1.1);
+}
+.card-4 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s ease;
+  object-position: top;
+}
+.card-5{
+  width: 16%;
+  height: 72%;
+  overflow: hidden;
+  position: absolute;
+  left: 60%;
+  top: 12%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.card-5:hover img{
+  transform: scale(1.1);
+}
+.card-5 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s ease;
+  object-position: top;
+}
+.card-6{
+  width: 16%;
+  height: 72%;
+  overflow: hidden;
+  position: absolute;
+  left: 77%;
+  top: 5%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.card-6:hover img{
+  transform: scale(1.1);
+}
+.card-6 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s ease;
+  object-position: top;
+}
+.card-7{
+  width: 16%;
+  height: 72%;
+  overflow: hidden;
+  position: absolute;
+  top: 0%;
+  right: -10%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.card-7:hover img{
+  transform: scale(1.1);
+}
+.card-7 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s ease;
+  object-position: top;
+}
+
+.section-1 h2{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 60%;
+  font-family: "Media";
+  font-size: 45px;
+}
+.section-1 .line{
+  width: 320px;
+  height: 3px;
+  background-color: #f78c00;
+  position: absolute;
+  left: 40%;
+  transform: translateX(-50%);
+  top: 62%;
+  z-index: 5;
+  transform-origin: left center;
+  transform: scaleX(0);
+}
+.section-1 h1{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 65%;
+  font-family: "Media";
+  font-size: 52px;
+  opacity: 0%;
+}
+.section-1 p.p1{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 72%;
+  font-size: 30px;
+  text-align: center;
+  font-family: "SF Pro";
+}
+.section-1 p.p2{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 80%;
+  font-size: 16px;
+  text-align: center;
+  font-family: "SF Pro";
+}
+.section-1 p.p2 strong{
+  color: #f78c00;
+}
+
+/* <====================================================== Section 2 Coded Here ======================================================> */
+
+.section-2{
+  width: 100%;
+  height: 120vh;
+  background-color: #1B1B1B;
+  position: relative;
+}
+.section-2 h1{
+  position: absolute;
+  color: white;
+  font-family: "Media";
+  font-size: 55px;
+  letter-spacing: 1px;
+  top: 10%;
+  left: 10%;
+}
+.carousel-wrapper{
+  width: 80%;
+  height: 62%;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%,-50%);
+  /* border: 2px solid white; */
+}
+.slides-holder{
+  width: 236%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+}
+.slide{
+  width: 13%;
+  height: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.overlay{
+  width: 100%;
+  height: 0%;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0) -34%, rgba(38,38,38,0.87718837535014) 0%, rgba(17,17,17,0.8715861344537815) 100%);
+  position: absolute;
+  z-index: 5;
+  transition: .5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0%;
+
+}
+.overlay i{
+  font-size: 25px;
+  margin: 0 15px;
+  background-color: white;
+  color: #1B1B1B;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s ease;
+}
+.overlay i:hover{
+  background-color: #f78c00;
+  color: white;
+}
+.slide:hover .overlay{
+  height: 100%;
+  opacity: 100%;
+}
+
+.tool-github{
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  top: 56%;
+  border-radius: 50px;
+  left: 27%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "SF Pro";
+  font-weight: 800;
+  letter-spacing: 2px;
+  opacity: 0%;
+  transition: .5s ease;
+}
+.tool-livedemo{
+  width: 120px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  top: 56%;
+  border-radius: 50px;
+  left: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "SF Pro";
+  font-weight: 800;
+  letter-spacing: 1px;
+  opacity: 0%;
+  transition: .5s ease;
+}
+.slide:hover img{
+  transform: scale(1.05);
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: .5s ease;
+  position: absolute;
+}
+.left-button{
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: transparent;
+  overflow: hidden;
+  border: 2px solid white;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  position: absolute;
+  left: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.left-button::before{
+  content: "";
+  width: 65px;
+  height: 65px;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  left: 100%;
+  top: -100%;
+  transition: .5s ease;
+}
+.left-button:hover i{
+  color: #1B1B1B;
+}
+.left-button:hover::before{
+  left:0%;
+  top: 0%;
+}
+.left-button i{
+  pointer-events: none;
+  transition: .5s ease;
+  z-index: 80;
+}
+
+.right-button{
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: transparent;
+  overflow: hidden;
+  border: 2px solid white;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.right-button::before{
+  content: "";
+  width: 65px;
+  height: 65px;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  left: 100%;
+  top: -100%;
+  transition: .5s ease;
+}
+.right-button:hover i{
+  color: #1B1B1B;
+}
+.right-button:hover::before{
+  left:0%;
+  top: 0%;
+}
+.right-button i{
+  pointer-events: none;
+  transition: .5s ease;
+  z-index: 80;
+}
+
+/* <====================================================== Section 3 Coded Here ======================================================> */
+
+
+.section-3{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+}
+.show-me{
+  width: 300%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center;
+  transform: rotate(6deg);
+  position: absolute;
+  left: -30%;
+  top: 48%;
+}
+.show-me p{
+  font-size: 110px;
+  font-family: "Media";
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #1B1B1B;
+}
+.passions{
+  width: 230%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center;
+  transform: rotate(6deg);
+  position: absolute;
+  left: -5%;
+  bottom: 20%;
+
+}
+.passions p{
+  font-size: 120px;
+  font-family: "Media";
+  color: #1B1B1B;
+}
+
+/* <====================================================== Section 4 Coded Here ======================================================> */
+
+.section-4{
+  width: 100%;
+  height: 120vh;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+.left-section-4{
+  width: 35%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+.left-section-4 h2{
+  color: #f78c00;
+  font-family: "SF Pro";
+  font-size: 14px;
+  letter-spacing: 10px;
+}
+.left-section-4 h1{
+  font-family: "Media";
+  font-size: 50px;
+  margin-top: 10px;
+}
+.left-section-4 p{
+  font-family: "SF Pro";
+  font-size: 22px;
+  margin-top: 20px;
+  line-height: 40px;
+}
+.left-section-4 p span{
+  font-weight: 900;
+}
+.right-section-4{
+  width: 35%;
+  height: 80%;
+  position: absolute;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-logo{
+  width: 80%;
+  height: 50%;
+  overflow: hidden;
+  z-index: 50;
+}
+.main-logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.top-logo1{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0%;
+  left: -22%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.top-logo1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.top-logo2{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0%;
+  right: -30%;
+  overflow: hidden;
+  z-index: 51;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.535);
+  border-radius: 15px;
+}
+.top-logo2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bottom-logo1{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 10%;
+  left: -25%;
+  overflow: hidden;
+  z-index: 51;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.535);
+  border-radius: 15px;
+}
+.bottom-logo1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bottom-logo2{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: 10%;
+  right: -15%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.bottom-logo2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* <====================================================== Section 5 Coded Here ======================================================> */
+
+.section-5{
+  width: 100%;
+  height: 80vh;
+  background-color: white;
+  position: relative;
+}
+.section-5 .video-box{
+  width: 30%;
+  height: 50%;
+  border-radius: 15px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+}
+.section-5 .video-box video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content-section-5{
+  width: 45%;
+  height: 60%;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.content-section-5 h2{
+  font-family: "SF Pro";
+  font-size: 14px;
+  letter-spacing: 10px;
+  color: #f78c00;
+}
+.content-section-5 h1{
+  font-family: "Media";
+  font-size: 50px;
+  width: 80%;
+  margin-top: 12px;
+}
+.content-section-5 p{
+  font-family: "SF Pro";
+  font-size: 22px;
+  width: 80%;
+  line-height: 35px;
+  margin-top: 20px;
+}
+.content-section-5 p span{
+  font-weight: 900;
+}
+
+/* <====================================================== Section 6 Coded Here ======================================================> */
+
+.section-6{
+  width: 100%;
+  height: 200vh;
+  background-color: white;
+  position: relative;
+}
+.left-section-6{
+  position: absolute;
+  width: 35%;
+  height: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+}
+.left-section-6 h2{
+  font-family: "SF Pro";
+  font-size: 14px;
+  letter-spacing: 10px;
+  color: #f78c00;
+}
+.left-section-6 h1{
+  font-family: "Media";
+  font-size: 50px;
+  width: 80%;
+  margin-top: 12px;
+}
+
+.left-section-6 p.left-section-6-1{
+  font-family: "SF Pro";
+  font-size: 22px;
+  width: 80%;
+  line-height: 35px;
+  margin-top: 5px;
+}
+.left-section-6 p.left-section-6-2{
+  font-family: "SF Pro";
+  font-size: 22px;
+  width: 80%;
+  line-height: 35px;
+  margin-top: 5px;
+}
+.left-section-6 p.left-section-6-2 span{
+  font-weight: 900;
+}
+.right-section-6{
+  width: 35%;
+  height: 90%;
+  position: absolute;
+  right: 6%;
+  display: flex;
+  justify-content: space-between;
+}
+.col-1-section-6{
+  width: 47%;
+  height: 60%;
+  position: absolute;
+  left: 0%;
+  bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-1-section-6{
+  width: 100%;
+  height: 48%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card-1-section-6 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.col-2-section-6{
+  width: 47%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  right: 0%;
+}
+.col-2-section-6 .card-1-section-6{
+  height: 31.5%;
+}
+
+/* <====================================================== Section 7 Coded Here ======================================================> */
+
+.section-7{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: #1B1B1B;
+  position: relative;
+}
+.section-7 h2{
+  position: absolute;
+  z-index: 50;
+  font-family: "SF Pro";
+  font-size: 14px;
+  letter-spacing: 10px;
+  color: #f78c00;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 35%;
+}
+.section-7 h1{
+  font-family: "Media";
+  font-size: 50px;
+  z-index: 50;
+  position: absolute;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+}
+.section-7 p{
+  position: absolute;
+  z-index: 50;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "SF Pro";
+  text-align: center;
+  width: 50%;
+  font-size: 20px;
+  top: 52%;
+}
+.section-7 a{
+  position: absolute;
+  z-index: 50;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: white;
+  font-family: "SF Pro";
+  font-size: 18px;
+  width: 200px;
+  height: 50px;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 63%;
+  transform-origin: center;
+  transition: .3s ease;
+}
+.section-7 a:hover{
+  width: 220px;
+}
+.section-7::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #1b1b1bd3;
+  position: absolute;
+}
+.col-section-7{
+  width: 24%;
+  height: 220vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  top: -87%;
+}
+.card-1-section-7{
+  width: 100%;
+  height: 32%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* <====================================================== Section 8 Coded Here ======================================================> */
+
+.section-8{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  position: relative;
+}
+.left-section-8{
+  width: 30%;
+  height:50%;
+  background-color: #f78c00;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+}
+
+
+.swiper {
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.content-section-8{
+  width: 40%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 6%;
+}
+.content-section-8 h2{
+  font-family: "SF Pro";
+  font-size: 14px;
+  letter-spacing: 10px;
+  color: #f78c00;
+}
+.content-section-8 h1{
+  font-family: "Media";
+  font-size: 50px;
+  margin-top: 12px;
+}
+.content-section-8 p{
+  font-family: "SF Pro";
+  font-size: 22px;
+  width: 80%;
+  line-height: 35px;
+  margin-top: 20px;
+}
+.content-section-8 p span{
+  font-weight: 900;
+}
+
+/* <====================================================== Section 9 Coded Here ======================================================> */
+
+.section-9{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  position: relative;
+}
+.section-9-container{
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.row-section-9{
+  width: 100%;
+  height: 23%;
+  border-bottom: 2px solid #1B1B1B;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  transform-origin: center;
+  transition: .5s ease;
+  cursor: pointer;
+}
+.row-section-9:hover{
+  padding: 0 30px;
+}
+.row-section-9 h1{
+  font-family: "Media";
+  font-size: 45px;
+  margin-top: 12px;
+}
+.row-section-9 .icon{
+  width: 70px;
+  height: 70px;
+  background-color: #1B1B1B;
+  color: white;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+/* <====================================================== Footer Coded Here ======================================================> */
+
+.footer{
+  width: 100%;
+  height: 15vh;
+  background-color: #1B1B1B;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  align-items: center;
+}
+.footer p{
+  color: white;
+  font-family: "SF Pro";
+  font-size: 25px;
+}
+.footer ul{
+  font-family: "SF Pro";
+  display: flex;
+  list-style: none;
+}
+.footer ul li{
+  margin: 0 20px;
+}
+.footer ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}

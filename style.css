@@ -1,0 +1,417 @@
+@font-face {
+    font-family: "Media";
+    src: url('./Fonts/font\ 1.otf');
+}
+@font-face {
+    font-family: "SF Pro";
+    src: url('./Fonts/font\ 2.otf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+
+/* <====================================================== Button Loader Coded Here ======================================================> */
+
+.button-loader{
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    position: fixed;
+    z-index: 999;
+    pointer-events: none;
+    display: none;
+}
+.lft-slide{
+    width: 50%;
+    height: 100%;
+    background-color: #191919;
+    position: absolute;
+    left: -100%;
+}
+.rgt-slide{
+    width: 50%;
+    height: 100%;
+    background-color: #191919;
+    position: absolute;
+    right: -100%;
+}
+
+
+/* <====================================================== Loading Screen Coded Here ======================================================> */
+
+
+
+.loader_wrapper{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 10000;
+    background-color: transparent;
+    /* display: none;   */
+}
+.left_screen{
+    width: 50%;
+    height: 100%;
+    background-color: #191919;
+    position: absolute;
+    left: 0%;
+}
+.right_screen{
+    width: 50%;
+    height: 100%;
+    background-color: #191919;
+    position: absolute;
+    right: 0%;
+}
+.loading_logo{
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    overflow: hidden;
+}
+.loading_logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* <====================================================== Cursor Coded Here ======================================================> */
+
+.cursor{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border: 4px solid #191919;
+    border-radius: 50px;
+    position: absolute;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.29);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    pointer-events: none;
+    opacity : 0%;
+}
+.cursor i{
+    font-size: 25px;
+    transform: rotate(-45deg);
+    pointer-events: none;
+}
+
+/* <====================================================== Navbar Coded Here ======================================================> */
+
+nav{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "SF Pro";
+    padding: 0 100px;
+}
+.nav_logo{
+    width: 12%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.nav_logo img{
+    width: 230%;
+    height: 230%;
+    object-fit: cover;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 35px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(31, 31, 31);
+    font-weight: 300;
+}
+
+nav a.contact_btn{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    transform-origin: center;
+    transition: .5s ease;
+}
+nav a.contact_btn:hover{
+    transform: scaleX(1.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.543);
+}
+
+.toggle-menu{
+    width: 40%;
+    height: 100vh;
+    background-color: #191919;
+    position: absolute;
+    z-index: 50;
+    top: 0%;
+    right: -100%;
+    transition: 1s linear;
+}
+.toggle-icon{
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    position: absolute;
+    top: 4.5%;
+    right: 2%;
+    display: none;
+}
+.toggle-icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+.toggle-icon-black{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+}
+.toggle-icon-black img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.toggle-menu ul{
+    list-style: none;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    text-align: right;
+}
+.toggle-menu ul li{
+    margin: 50px 0px;
+}
+.toggle-menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: "SF Pro";
+    font-size: 32px;
+    transition: .2s ease;
+}
+.toggle-menu ul li a:hover{
+    color: orange;
+}
+
+/* <====================================================== Herobox Coded Here ======================================================> */
+
+.herobox{
+    width: 100%;
+    height: 85vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+}
+.herobox .intro{
+    width: 70%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "SF Pro";
+    font-size: 27px;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    opacity: 0%;
+    transform: translateX(-50%);
+}
+.herobox .intro a{
+    text-decoration: none;
+    color: rgb(45, 45, 45);
+}
+.herobox .passion_1{
+    width: 70%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    opacity: 0%;
+    transform: translateX(-50%);
+}
+.herobox .passion_1 a{
+    text-decoration: none;
+    font-size: 170px;
+    font-family: "Media";
+    color: rgb(25, 25, 25);
+    -webkit-text-stroke: .8px #191919;
+    transition: .5s ease;
+}
+
+.herobox .passion_2{
+    width: 70%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    opacity: 0%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+.herobox .passion_2 a{
+    text-decoration: none;
+    font-size: 180px;
+    font-family: "Media";
+    color: transparent;
+    -webkit-text-stroke: .8px #191919;
+    transition: .5s ease;
+}
+.herobox_image{
+    width: 27%;
+    height: 75%;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity: 0%;
+}
+.herobox_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+}
+
+.herobox .passion_1_outline{
+    width: 70%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    opacity: 0%;
+}
+.herobox .passion_1_outline a{
+    text-decoration: none;
+    font-size: 170px;
+    font-family: "Media";
+    color: transparent;
+    -webkit-text-stroke: .8px #ffffff;
+    transition: .5s ease;
+    pointer-events: none;
+}
+
+.herobox .passion_2_outline{
+    width: 70%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    opacity: 0%;
+}
+.herobox .passion_2_outline a{
+    text-decoration: none;
+    font-size: 180px;
+    font-family: "Media";
+    color: transparent;
+    -webkit-text-stroke: .8px #ffffff;
+    transition: .5s ease;
+    pointer-events: none;
+}
+.herobox p{
+    font-family: "SF Pro";
+    font-size: 28px;
+    position: absolute;
+    bottom: 18%;
+    left: 12%;
+    opacity: 0%;
+}
+.herobox a.designer_btn{
+    width: 180px;
+    height: 45px;
+    background-color: #191919;
+    position: absolute;
+    bottom: 5%;
+    left: 38%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s linear;
+    opacity: 0%;
+    text-decoration: none;
+    color: white;
+    font-family: "SF Pro";
+    z-index: 50;
+}
+
+.herobox a.designer_btn:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.543);
+    bottom: 6%;
+}
+
+.herobox a.photographer_btn{
+    width: 200px;
+    height: 45px;
+    background-color: #191919;
+    position: absolute;
+    bottom: 5%;
+    left: 51%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s linear;
+    opacity: 0%;
+    text-decoration: none;
+    color: white;
+    font-family: "SF Pro";
+}
+
+.herobox a.photographer_btn:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.543);
+    bottom: 6%;
+}
