@@ -314,6 +314,7 @@ nav a.contact_btn:hover{
     object-fit: cover;
     object-position: center;
     position: absolute;
+    transform: scale(1.1);
 }
 
 .herobox .passion_1_outline{

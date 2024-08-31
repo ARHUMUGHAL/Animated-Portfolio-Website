@@ -1,11 +1,28 @@
 @media screen and (max-width : 1440px) {
 
+    .toggle-menu{
+        display: none;
+    }
+    .herobox_image{
+        width: 40%;
+    }
+    .herobox_image img{
+        transform: scale(0.9);
+    }
+
     .herobox .passion_2 a{
         font-size: 160px;
     }
+    .herobox .passion_2_outline a{
+        font-size: 160px;
+    }
     .herobox p{
-        font-size: 25px;
+        font-size: 18px;
         left: 15%;
+        bottom: 20%;
+    }
+    .herobox a.designer_btn{
+        left: 35%;
     }
 }
 
@@ -40,9 +57,13 @@
     .herobox_image{
         width: 40%;
     }
+    .herobox_image img{
+        transform: scale(1);
+    }
     .herobox p{
-        font-size: 22px;
+        font-size: 18px;
         left: 7%;
+        bottom: 20%;
     }
     .herobox a.designer_btn{
         width: 160px;
@@ -55,60 +76,5 @@
     }
 }
 
-@media screen and (max-width : 768px) {
 
-    .cursor{
-        display: none;
-    }
-
-    nav{
-        padding: 0 70px 0 20px;
-    }
-    nav ul{
-        display: none;
-    }
-    .nav_logo{
-        width: 22%;
-    }
-    .toggle-icon{
-        display: block;
-    }
-    .herobox .passion_1 a{
-        font-size: 130px;
-    }
-    .herobox .passion_1_outline a{
-        font-size: 130px;
-    }
-    .herobox .passion_2{
-        width: 90%;
-        height: 22%;
-    }
-    .herobox .passion_2 a{
-        font-size: 115px;
-    }
-    .herobox .passion_2_outline{
-        width: 90%;
-        height: 22%;
-    }
-    .herobox .passion_2_outline a{
-        font-size: 115px;
-    }
-    .herobox_image{
-        height: 68%;
-        width: 42%;
-        top: 18%;
-    }
-    .herobox p{
-        bottom: 28%;
-        left: 3%;
-        font-size: 16px;
-    }
-    .herobox a.designer_btn{
-        left: 28%;
-        bottom: 8%;
-    }
-    .herobox a.photographer_btn{
-        bottom: 8%;
-    }
-}
 
